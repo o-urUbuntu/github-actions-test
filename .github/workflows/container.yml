@@ -1,4 +1,4 @@
-name: Container_task
+name: Container
 on: push
 
 jobs:
