@@ -13,9 +13,11 @@ jobs:
           node -v
           npm -v
       - name: python Command
+        timeout-minutes: 1
         run: |
           import platform
           print(platform.processor())
+        continue-on-error: True
         shell: python
   run-windows-command:
     runs-on: windows-latest
